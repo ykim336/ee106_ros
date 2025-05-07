@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="lab2_world">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <!-- Obstacles: three cuboids at different coords -->
+    <model name="box1">
+      <pose>2 0 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="vis">
+          <geometry><box><size>1 1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+    <!-- Repeat for box2, box3 at other positions -->
+  </world>
+</sdf>
+

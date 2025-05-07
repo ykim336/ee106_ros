@@ -1,0 +1,21 @@
+<launch>
+  <!-- Spin up ROS Core if it isn't already -->
+  <include file="$(find roscpp_tutorials)/launch/talker_listener.launch" optional="true"/>
+
+  <!-- Publisher node -->
+  <node
+    pkg="ee106s25"
+    type="publisher.py"
+    name="publisher"
+    output="screen">
+    <!-- you could set args or remaps here if needed -->
+  </node>
+
+  <!-- Subscriber node -->
+  <node
+    pkg="ee106s25"
+    type="subscriber.py"
+    name="subscriber"
+    output="screen"/>
+</launch>
+
