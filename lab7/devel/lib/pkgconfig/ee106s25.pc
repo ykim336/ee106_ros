@@ -1,0 +1,8 @@
+prefix=/home/vonkovi/catkin_ws/devel
+
+Name: ee106s25
+Description: Description of ee106s25
+Version: 0.0.0
+Cflags: -I/home/vonkovi/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime
